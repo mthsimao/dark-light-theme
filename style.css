@@ -22,6 +22,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 22px;
+    margin-bottom: 22px;
     box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.079);
 }
 
@@ -99,6 +100,7 @@ main {
     align-items: center;
     justify-content: space-between;
     width: 80%;
+    padding-top: 22px;
 }
 
 .card-details {
@@ -293,10 +295,6 @@ footer a:hover {
 @media screen and (max-width:375px) {
     .logo, .logo2 {
         width: 256px;
-    }
-
-    .card {
-        padding: 22px 0;
     }
 
     .img-keyboard {
