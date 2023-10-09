@@ -12,7 +12,7 @@ html, body {
     align-items: center;
     justify-self: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     transition: all .2s;
 }
 
@@ -30,7 +30,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 75%;
+    width: 85%;
 }
 
 .logo {
@@ -50,7 +50,7 @@ input[type="checkbox"] {
     background-color: #19191A;
     color: #fff;
     border-radius: 40px;
-    padding: 12px 18px 12px 22px;
+    padding: 10px 16px 10px 18px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,7 +65,7 @@ input[type="checkbox"] {
     background-color: #fff;
     color: black;
     border-radius: 40px;
-    padding: 12px 18px 12px 22px;
+    padding: 10px 16px 10px 18px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -90,7 +90,7 @@ input[type="checkbox"] {
 main {
     width: 100%;
     display: flex;
-    align-items: center;
+    flex: 1;
     justify-content: center;
 }
 
@@ -98,8 +98,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 6%;
-    width: 75%;
+    width: 80%;
 }
 
 .card-details {
@@ -115,21 +114,22 @@ main {
     font-size: 1.8em;
     font-weight: bolder;
     text-decoration: 1.7px underline orange;
+    max-width: 450px;
 }
 
 .card-details p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.1em;
-    width: 500px;
+    max-width: 500px;
 }
 
 footer {
     display: flex;
-    align-items: end;
     justify-content: center;
-    position: absolute;
-    bottom: 2%;
+    width: 100%;
+    height: 2.5rem;
     font-size: 1em;
+    padding-bottom: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -204,9 +204,119 @@ footer a:hover {
     .card {
         display: flex;
         flex-direction: column;
-        gap: 6em;
+        gap: 4em;
         margin-bottom: 2%;
     }
 
+}
 
+@media screen and (max-width:935px) {
+    .head {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo, .logo2 {
+        width: 276px;
+    }
+
+    .darkbtn, .lightbtn {
+        width: 160px;
+        font-size: 1em;
+    }
+
+    .img-keyboard {
+        width: 512px;
+    }
+}
+
+@media screen and (max-width:546px) {
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .darkbtn, .lightbtn {
+        height: 50px;
+        width: 50px;
+        padding: 0px 12px;
+        font-size: .9em;
+    }
+
+    .darkbtn span, .lightbtn span {
+        display: none;
+        width: 0px;
+    }
+
+    .darkbtn .bi , .lightbtn .bi {
+        width: 28px;
+    }
+
+    .card-details h1 {
+        font-size: 1.6em;
+    }
+
+    .card-details p {
+        font-size: 1em;
+    }
+
+    .img-keyboard {
+        width: 428px;
+    }
+
+    footer {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .card-details h1 {
+        font-size: 1.2em;
+    }
+
+    .card-details p {
+        font-size: 1em;
+    }
+
+    .img-keyboard {
+        width: 362px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .logo, .logo2 {
+        width: 256px;
+    }
+
+    .card {
+        padding: 10px 0;
+    }
+
+    .img-keyboard {
+        width: 346px;
+    }
+}
+
+@media screen and (max-width:348px) {
+
+    .logo, .logo2 {
+        width: 215px;
+    }
+
+    .img-keyboard {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .img-keyboard {
+        width: 275px;
+    }
 }
