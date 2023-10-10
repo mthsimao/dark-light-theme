@@ -1,4 +1,4 @@
-# dark-light-theme
+# Project with dark and light theme.
  Desafio de um site com tema escuro e claro.
 
 Usando HTML, CSS e JavaScript eu fiz esse mini projeto da marca do meu teclado apenas para treinar o meu JS.
@@ -6,3 +6,5 @@ Usando HTML, CSS e JavaScript eu fiz esse mini projeto da marca do meu teclado a
 E também melhorar ainda mais o meu CSS, com a responsividade e a estilização.
 
 Usei a propriedade (FLEX: 1 ;) no main para deixar o footer fixo embaixo da página.
+
+<a href="https://mthsimao.github.io/dark-light-theme/"> Link </a>
